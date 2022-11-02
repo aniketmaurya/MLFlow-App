@@ -17,7 +17,7 @@ if _TORCHVISION_AVAILABLE:
     from torchvision import transforms
 
 DATASETS_PATH = path.join(path.dirname(__file__), "..", "..", "Datasets")
-mlf_logger = MLFlowLogger(experiment_name="lightning_logs", tracking_uri="http://0.0.0.0:61526")
+mlf_logger = MLFlowLogger(experiment_name="lightning_logs", tracking_uri="https://qtwqd-01ggvyndnb75bb9nkq8mabxvzj.litng-ai-03.litng.ai")
 
 
 class Backbone(torch.nn.Module):
