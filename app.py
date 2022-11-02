@@ -16,7 +16,8 @@ class MLFlowApp(L.LightningFlow):
     
     def run(self, *args, **kwargs) -> None:
         self.mlflow_server.run()
-        print(self.mlflow_server.url)
+        if self.mlflow_server.url:
+            print(self.mlflow_server.url)
     
     def configure_layout(self):
         return {"name": None, "content": self.mlflow_server.url}
